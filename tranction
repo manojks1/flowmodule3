@@ -1,4 +1,4 @@
-import MyContract from 0x01
+import MyContract from 0x05
 
 transaction (name : String, score: UInt32) {
 
