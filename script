@@ -1,4 +1,4 @@
-import MyContract from 0x01
+import MyContract from 0x05
 
 pub fun main(name : String): MyContract.Person {
   return MyContract.getPerson(name: name)
