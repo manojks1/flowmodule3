@@ -1,11 +1,11 @@
 pub contract MyContract {
     pub struct Person {
         pub var name: String
-        pub var no: UInt32
+        pub var score: UInt32
         
-        init (name : String, no: UInt32) {
+        init (name : String, score: UInt32) {
             self.name = name
-            self.no = no
+            self.score = score
         }
     }
 
@@ -15,8 +15,8 @@ pub contract MyContract {
         self.people = {}
     }
 
-    pub fun addPerson(name: String, no: UInt32) {
-        let person = Person(name: name, no: no)
+    pub fun addPerson(_name: String, _score: UInt32) {
+        let person = Person(name: name, score: score)
         self.people[name] = person
     }
     
@@ -24,3 +24,4 @@ pub contract MyContract {
         return self.people[name]!
     }
 }
+
