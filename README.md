@@ -6,14 +6,14 @@ This is a simple smart contract which gives the value from the give funtion writ
 
 ## Description
 
-This smart contract defines a Person structure and a dictionary named people, which translates String keys to Person's name. The smart contract also has two functions, addname and getId.
+This smart contract defines a Person structure and a dictionary named people, which translates String keys to Person's name. The smart contract also has two functions, addname and getscore.
 
-The Person struct contains two fields: name (a String representing the person's name) and no (a UInt32 reflecting the person's unique identification).
+The Person struct contains two fields: name (a String representing the person's name) and score (a UInt32 reflecting the person's score).
 
 
-The addPerson method accepts two arguments: name, a String indicating the name of the person to be added, and no, a UInt32 representing the individual's unique identification. The function generates a new Person instance with the given name and number and adds it to the people dictionary.
+The addPerson method accepts two arguments: name, a String indicating the name of the person to be added, and score, a UInt32 representing the individual's score. The function generates a new Person instance with the given name and number and adds it to the people dictionary.
 
-In order to retrieve a Person instance from the people dictionary with a specified name, the getId function requires a single argument, name, which is a String representing the name of the person to be retrieved. 
+In order to retrieve a Person instance from the people dictionary with a specified name, the getscore function requires a single argument, name, which is a String representing the name of the person to be retrieved. 
 
 The smart contract also includes an init function that initialises the people dictionary to an empty dictionary.
  
